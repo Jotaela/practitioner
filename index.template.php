@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php $bones= 'hola'; ?>
-    <?= echo $bones; ?>
+    <?= 'hola ' . $name ?>
 </body>
 </html>
