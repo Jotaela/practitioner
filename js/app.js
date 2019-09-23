@@ -1,12 +1,12 @@
+"use strict";
+
+var _salutacions = _interopRequireDefault(require("./js/templates/salutacions.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 //console.log('keloke')
- 
-const name="joan"
-
-document.body.innerHTML= template
-
-//document.body.innerHTML = '<h1>hola ' + name +'</h1>'
-
+var name = "joan";
+document.body.innerHTML = template; //document.body.innerHTML = '<h1>hola ' + name +'</h1>'
 //import i export
- import salutacions from './js/templates/salutacions.js'
- console.log(salutacions);
- 
+
+console.log(_salutacions["default"]);
