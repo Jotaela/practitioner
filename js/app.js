@@ -95,10 +95,41 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './js/templates/salutacions.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var _templates_salutacions_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/salutacions.js */ "./src/templates/salutacions.js");
+
+document.body.innerHTML = _templates_salutacions_js__WEBPACK_IMPORTED_MODULE_0__["template"];
+
+/***/ }),
+
+/***/ "./src/model.js":
+/*!**********************!*\
+  !*** ./src/model.js ***!
+  \**********************/
+/*! exports provided: name */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
 var name = "joan";
 
-document.body.innerHTML = !(function webpackMissingModule() { var e = new Error("Cannot find module './js/templates/salutacions.js'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
+/***/ }),
+
+/***/ "./src/templates/salutacions.js":
+/*!**************************************!*\
+  !*** ./src/templates/salutacions.js ***!
+  \**************************************/
+/*! exports provided: template */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
+/* harmony import */ var _model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model.js */ "./src/model.js");
+
+var template = "\n<h1>Hola ".concat(_model_js__WEBPACK_IMPORTED_MODULE_0__["name"], "</h1>\n");
+
 
 /***/ }),
 

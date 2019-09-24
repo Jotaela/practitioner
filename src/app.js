@@ -1,6 +1,3 @@
-const name="joan"
+import {template} from './templates/salutacions.js'
 
- 
-import salutacions from './js/templates/salutacions.js'
-
-document.body.innerHTML= salutacions
+document.body.innerHTML= template
