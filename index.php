@@ -1,6 +1,10 @@
 <?php
 
- //include i require són lo marteix però si el fitxer no exiteix require peta
+//funcions globals o helpers
+require 'helpers.php';
+dump('dew');
+//MODEL
 require 'models/task.php';
 
+//VISTA
 require 'index.template.php';
