@@ -1,3 +1,3 @@
-import {template} from './templates/salutacions.js'
+import {template} from './templates/task.js'
 
 document.body.innerHTML= template

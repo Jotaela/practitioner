@@ -95,9 +95,9 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _templates_salutacions_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/salutacions.js */ "./src/templates/salutacions.js");
+/* harmony import */ var _templates_task_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./templates/task.js */ "./src/templates/task.js");
 
-document.body.innerHTML = _templates_salutacions_js__WEBPACK_IMPORTED_MODULE_0__["template"];
+document.body.innerHTML = _templates_task_js__WEBPACK_IMPORTED_MODULE_0__["template"];
 
 /***/ }),
 
@@ -105,21 +105,27 @@ document.body.innerHTML = _templates_salutacions_js__WEBPACK_IMPORTED_MODULE_0__
 /*!**********************!*\
   !*** ./src/model.js ***!
   \**********************/
-/*! exports provided: name */
+/*! exports provided: task, nom */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "name", function() { return name; });
-var name = "joan";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "task", function() { return task; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "nom", function() { return nom; });
+var nom = "joan";
+var task = {
+  name: 'Comprar Llet',
+  description: 'Al Lidl',
+  completed: true
+};
 
 
 /***/ }),
 
-/***/ "./src/templates/salutacions.js":
-/*!**************************************!*\
-  !*** ./src/templates/salutacions.js ***!
-  \**************************************/
+/***/ "./src/templates/task.js":
+/*!*******************************!*\
+  !*** ./src/templates/task.js ***!
+  \*******************************/
 /*! exports provided: template */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -128,7 +134,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "template", function() { return template; });
 /* harmony import */ var _model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../model.js */ "./src/model.js");
 
-var template = "\n<h1>Hola ".concat(_model_js__WEBPACK_IMPORTED_MODULE_0__["name"], "</h1>\n");
+var template = "\n<h1>".concat(_model_js__WEBPACK_IMPORTED_MODULE_0__["task"].name, "</h1>\n<ul>\n    <li> Descripci\xF3: ").concat(_model_js__WEBPACK_IMPORTED_MODULE_0__["task"].description, "</li>\n    <li> completada: ").concat(_model_js__WEBPACK_IMPORTED_MODULE_0__["task"].completed, "</li>\n</ul>    \n");
 
 
 /***/ }),
