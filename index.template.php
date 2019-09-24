@@ -7,13 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <p>
+    <h1><?=$task['nom']?></h1>
     <ul>
-    <?php 
-    foreach ($classe as $alumne){
-        echo("<li>hola $alumne</li>");
-    }
-    ?>
+        <li>desctipcio: <?= $task['descripcio']?></li>
+        <li>estat:
+            <?php if($task['estat']):$task['estat']?>
+            complet
+            <?php else:?>   
+            pendent
+            <?php endif;?>
+        </li>
     </ul>
-    
 </body>
 </html>
