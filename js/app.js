@@ -90,11 +90,9 @@
 /*!********************!*\
   !*** ./helpers.js ***!
   \********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
 function log(entrada) {
   console.log(entrada);
 }
@@ -103,10 +101,20 @@ function saludar() {
   console.log('hola');
 }
 
-/* harmony default export */ __webpack_exports__["default"] = ({
+function suma(num1, num2) {
+  return num1 + num2;
+}
+
+function multiplication(num1, num2) {
+  return num1 * num2;
+}
+
+module.exports = {
   log: log,
-  saludar: saludar
-});
+  saludar: saludar,
+  suma: suma,
+  multiplication: multiplication
+};
 
 /***/ }),
 
@@ -120,12 +128,13 @@ function saludar() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../helpers.js */ "./helpers.js");
+/* harmony import */ var _helpers_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_helpers_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _templates_task_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./templates/task.js */ "./src/templates/task.js");
 
 
 document.body.innerHTML = _templates_task_js__WEBPACK_IMPORTED_MODULE_1__["template"];
-_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].log('prova');
-_helpers_js__WEBPACK_IMPORTED_MODULE_0__["default"].saludar();
+_helpers_js__WEBPACK_IMPORTED_MODULE_0___default.a.log('prova');
+_helpers_js__WEBPACK_IMPORTED_MODULE_0___default.a.saludar();
 
 /***/ }),
 
