@@ -8,16 +8,11 @@
 </head>
 <body>
     <p>
-    <h1><?=$task['nom']?></h1>
+    <h1><?=$person->fullname?></h1>
     <ul>
-        <li>desctipcio: <?= $task['descripcio']?></li>
-        <li>estat:
-            <?php if($task['estat']):$task['estat']?>
-            complet
-            <?php else:?>   
-            pendent
-            <?php endif;?>
-        </li>
+        <li>nom: <?= $person->name?></li>
+        <li>cognoms: <?= $person->surname?></li>
+        <li>correu electronic: <?= $person->email?></li>
     </ul>
 </body>
 </html>
