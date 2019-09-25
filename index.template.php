@@ -7,12 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p>
-    <h1><?=$person->fullname?></h1>
     <ul>
-        <li>nom: <?= $person->name?></li>
-        <li>cognoms: <?= $person->surname?></li>
-        <li>correu electronic: <?= $person->email?></li>
+        <li><?php $tasks[0]["name"] ?></li>
+        <li><?php $tasks[0]["description"] ?></li>
+        <li>asdsd</li>
     </ul>
 </body>
 </html>

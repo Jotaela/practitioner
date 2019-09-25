@@ -4,7 +4,7 @@
 require 'helpers.php';
 
 //MODEL
-require 'models/person.php';
-dd($person);
+require 'models/task.php';
+
 //VISTA
 require 'index.template.php';
