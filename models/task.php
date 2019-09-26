@@ -6,8 +6,6 @@
     $query-> execute();
 
     $results = $query -> fetchAll();
-    die(var_dump($results['0']['name']));
-    $task = $results[0];
 
 // $task = [
 //     'nom' => 'Comprar llet',

@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li><?php $tasks[0]["name"] ?></li>
-        <li><?php $tasks[0]["description"] ?></li>
-        <li>asdsd</li>
-    </ul>
+    <?php
+        foreach ($results as $task){
+            echo "<h1>" . $task['name'] . "</h1>"
+                . "<ul>
+                    <li>" . $task['description'] . "</li>
+                    <li>" . $task['completed'] . "</li>
+                </ul>";
+        };
+    ?>
 </body>
 </html>
